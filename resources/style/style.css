@@ -1,0 +1,117 @@
+/* GLOBAL */
+
+html, body {
+  font-size: 16px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+
+/* HEADER */
+
+.header {
+  align-items: center;
+  background-image: url('../images/header.jpg');
+  background-position: top center;
+  background-size: cover;
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.headline {
+  color: white;
+  font-family: 'Abril Fatface';
+  font-size: 6rem;
+  margin-top: auto;
+}
+
+.post-link {
+  color: white;
+  cursor: pointer;
+  font-family: 'Abril Fatface';
+  font-size: 2.5rem;
+  height: 3rem;
+  margin-top: auto;
+  margin-bottom: 30px;
+  transition: all 100ms ease-out;
+}
+
+.post-link > a {
+  color: white;
+  text-decoration: none;
+}
+
+.post-link:hover {
+  font-size: 2.75rem;
+}
+
+
+/* POSTS */
+
+.posts {
+  display: flex;
+  width: 100%;
+}
+
+.post-list {
+  height: 100%;
+  width: 25%;
+}
+
+.post {
+  box-shadow: 10px 10px 10px #888888;
+  outline: 2px solid black;
+  margin: 50px auto;
+  width: 300px;
+  transition: all 250ms ease-out;
+}
+
+.post:hover {
+  box-shadow: 10px 10px 20px #888888;
+  transform: scale(1.02, 1.02);
+}
+
+.post-image > img {
+  max-width: 300px;
+}
+
+.post-details {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.post-date {
+  align-items: center;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50px;
+  display: flex;
+  font-family: 'Pacifico';
+  height: 50px;
+  justify-content: center;
+  margin: -25px auto 0 auto;
+  position: relative;
+  width: 50px;
+}
+
+.post-title {
+  font-family: 'Ranga';
+  font-size: 1.75rem;
+  margin: -15px;
+  text-align: center;
+}
+
+.post-description {
+  font-family: 'Quicksand';
+  font-size: .9rem;
+  padding: 0 20px;
+  text-align: center;
+}
